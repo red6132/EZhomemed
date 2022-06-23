@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.font.im/css?family=Slabo+27px);
+@import url(header.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 206, 200,1);
+}
+
+header{
+    position:sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.menu{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    font-size:30px;
+    display:block;
+   }
+   
+.menu:hover{
+    cursor:pointer;
+   }
+
+nav ul .member{
+    font-weight: bold;
+    color: rgba(0, 206, 200,1);
+}
+
+nav{
+    width:560px;
+    height:815px;
+    background-color: #fff;
+}
+
+
+nav li a{
+    font-size: 24px;
+}
+
+/* article 收費方案 */
+
+.content{
+    width: 100%;
+    height: 80px;
+    background-color:rgba(67,106,230,.2);
+    box-sizing: border-box;
+    margin-bottom:20px;
+    z-index: 1000;
+}
+
+.content h1{
+    text-align: center;
+    color:#fff;
+    line-height: 80px;
+    letter-spacing:1px;
+    font-size: 38px;
+}
+
+.article{
+    background-color: rgba(0,206,200,1);
+    justify-content: center;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.wrap{
+    background-color: rgba(0,206,200,1);
+    /* width: 40%; */
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.box{
+    width: 300px;
+    height: 380px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 60px 30px 30px 30px;
+    text-align:left;
+    font-weight: bold;
+    line-height: 2em;
+    color: rgb(38, 38, 38);
+    background-color:rgba(255,235,174,1);
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow:8px 8px rgba(67,106,230,.8);
+
+}
+
+.box:hover{
+    cursor: pointer;
+    border: solid 3.5px rgba(67,106,230,.9);
+    background-color:rgb(254, 254, 197);
+}
+
+
+
+.box h1{
+    margin:auto;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color:rgba(0,206,200,.13);
+    color: rgba(67,106,230,1);
+    border-radius: 10px;
+    height: 1px;
+    line-height: 0px;
+    width: 150px;
+    border-bottom: 2px dashed rgba(0,206,200,1);
+}
+
+.box p{
+    margin-top:30px;
+}
+
+
+
+.box h2{
+    text-align:center;
+    color:rgba(67,106,230,1);
+    margin: auto;
+    padding-top:15px ;
+    letter-spacing: 1px;
+    font-size: 23px;
+}
+
+.btn1,.btn2{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color:rgba(67,106,230,1);
+    text-align: center;
+    margin:auto;
+    margin-top: 25px;
+    padding:0px 5px;
+    border-radius: 50px;
+    box-shadow:0px 2px rgba(255, 255, 255, 0.3);
+    opacity:0;
+    /* display: none; */
+}
+
+
+
+.btn1 a,.btn2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    line-height: 60px;
+    background-color:rgba(0,206,200,1);
+    color: #fff;
+    text-align: center;
+}
+
+
+/*===============rwd details===============*/
+
+/* For tablets */
+@media only screen and (min-width: 768px) { 
+
+
+    /* nav */
+    nav{
+        box-sizing: border-box;
+        display: inline-block;
+        width:50%;
+        height:70px;
+        margin: auto;
+        padding: 30px;
+        text-align: right;
+    
+        z-index: 10000;
+        float: right;
+    
+    }
+    
+    
+    nav ul li{
+        display: inline-block;
+        width: 90px;
+        height: 30px;
+        padding: 0px 5px;
+        text-align: center;
+        line-height:35px;
+    }
+    
+    
+    nav ul li:hover{
+        cursor: pointer;
+        border-top: 3px solid rgba(0, 206, 200,.6);
+        font-weight: bold;
+    }
+    
+    nav li a{
+        text-decoration: none;
+        color:rgba(67,106,230);
+        font-size: 17px;
+        letter-spacing:1px;
+    }
+        .h_box img{
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            padding: 5px;
+        }
+    
+    .ficon{
+            font-size:60px;
+           }
+           
+    nav{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index:2000;
+           }
+           
+    nav li{
+            display: inline-block;
+            border-bottom:solid rgba(242, 242, 242, 1) 0px;
+           }
+           
+    .menu{
+            display:none;
+           }
+
+    /* 方案 */
+    .article{
+        flex-direction: row;
+    }
+
+    .wrap{
+        background-color: rgba(0,206,200,1);
+        width: 40%;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .box{
+        width: 300px;
+        height: 380px;
+        margin: auto;
+        margin-top: 20px;
+        padding: 60px 30px 30px 30px;
+        text-align:left;
+        font-weight: bold;
+        line-height: 2em;
+        color: rgb(38, 38, 38);
+        background-color:rgba(255,235,174,1);
+        box-sizing: border-box;
+        border-radius: 50px;
+        box-shadow:8px 8px rgba(67,106,230,.8);
+    
+    }
+
+}
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+   
+}

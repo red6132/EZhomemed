@@ -1,0 +1,552 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://fonts.font.im/css?family=Slabo+27px);
+@import url(header.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 206, 200,1);
+}
+
+header{
+    position:sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.menu{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    font-size:30px;
+    display:block;
+   }
+   
+.menu:hover{
+    cursor:pointer;
+   }
+
+nav ul .service{
+    font-weight: bold;
+    color: rgba(0, 206, 200,1);
+}
+
+nav li a{
+    font-size: 24px;
+}
+
+nav{
+    width:560px;
+    height:815px;
+    background-color: #fff;
+    display: block;
+}
+
+/* EZ HomeMed 服務內容 */
+
+section{
+	width:100%;
+    height:100%;
+    box-sizing: border-box;
+    display:inline-block;
+    margin:auto;
+}
+
+.content{
+    width: 100%;
+    height: 80px;
+    background-color:rgba(67,106,230,.2);
+    box-sizing: border-box;
+    margin-bottom:20px;
+}
+
+.content h1{
+    text-align: center;
+    color:#fff;
+    line-height: 80px;
+    letter-spacing:1px;
+    font-size: 32px;
+}
+
+
+
+.wrap{
+    width:100%;
+    height:auto;
+    margin:0px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+section:nth-child(2n){
+	background:rgba(0,206,200,1);	
+    color:rgb(247, 246, 246);
+}
+
+section:nth-child(3n){
+	background:rgba(255,235,174,1);
+}
+
+
+
+section .picbox,.textbox{
+    float: left;
+    box-sizing: border-box;
+    position:relative;
+}
+
+.picbox{
+    width:90%;
+    height:auto;
+    box-sizing: border-box;
+    margin: 20px 50px;
+}
+
+
+.picbox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    opacity: 0;
+
+    animation-name: ant_c;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation-name: ant_c; /* 動畫名稱 */
+	-webkit-animation-duration: 1s; /* 動畫時間 */
+	-webkit-animation-iteration-count: 1; /* 播放次數 */
+	-webkit-animation-timing-function: ease; /* 動態方式漸慢開始與結束 */
+	-webkit-animation-delay: .2s; /* 秒後播放 */
+	-webkit-animation-direction: normal; /* 動畫播放順序為順向 */
+	-webkit-animation-fill-mode: forwards; /* 動畫結束後停格於最後一格，需搭配direction */
+}
+
+@keyframes ant_c{
+	/* 第一格設定 */
+from { 
+}
+to {
+	opacity: 1;
+}
+}
+
+.textbox{
+width:100%;
+height: auto;
+padding: 20px 60px;
+box-sizing: border-box;
+line-height: 1.8em;
+font-weight: bold;
+}
+
+.textbox h1{
+    font-size: 28px;
+    margin: 10px 0px;
+    width: 115%;
+}
+
+/* br{
+    display: block;
+} */
+
+.textbox p{
+ padding: 30px 0px; 
+}
+
+
+
+
+/* 使用流程 */
+
+.flow{
+    background-color:rgba(0, 206, 200,1);
+    width: 100%;
+    height:auto;
+    box-sizing: border-box;
+}
+
+
+.step h2{
+    margin:20px 0px;
+    font-size: 25px;
+    color: rgba(67,106,230);
+
+}
+
+.wrap_1{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    width:auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center; 
+    background-color: #fff;
+    border-radius:10px ;
+}
+
+.wrap_2{
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    width:auto;
+    margin: auto;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-align: center; 
+    background-color: #fff;
+    border-radius:10px ;
+    
+}
+
+.step{
+    box-sizing: border-box;
+    width: 260px;
+    height: 550px;
+    margin: auto;
+    /* background-color: #00CEC8; */
+    /* border: solid; */
+
+}
+
+
+.step .img{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    /* border: solid; */
+}
+
+.step img{
+    width: 100%;
+    height: 100%;
+}
+
+.step .img p{
+    width:100%;
+    height: 55px;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    font-size:17px;
+    font-weight: bold;
+    color:rgb(64, 63, 63);
+}
+
+
+.step .pointer{
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+    bottom: 310px;
+    left: 125px;
+
+    opacity:0;
+
+	animation-name: ant1;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation-name: ant1; /* 動畫名稱 */
+	-webkit-animation-duration: 1.5s; /* 動畫時間 */
+	-webkit-animation-iteration-count: 1; /* 播放次數1次 */
+	-webkit-animation-timing-function: ease; /* 動態方式漸慢開始與結束 */
+	-webkit-animation-delay: 4.5s; /* 秒後播放 */
+	-webkit-animation-direction: normal; /* 動畫播放順序為順向 */
+	-webkit-animation-fill-mode: forwards; /* 動畫結束後停格於最後一格，需搭配direction */
+}
+
+@keyframes ant1{
+	/* 第一格設定 */
+from { 
+
+}
+to {
+	left:29%;
+    bottom: 36%;
+	opacity: 1;
+}
+}
+
+.step .pointer2{
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+    bottom: 110px;
+    left: 140px;
+
+    opacity:0;
+
+	animation-name: ant2;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation-name: ant2; /* 動畫名稱 */
+	-webkit-animation-duration: 1.5s; /* 動畫時間 */
+	-webkit-animation-iteration-count: 1; /* 播放次數1次 */
+	-webkit-animation-timing-function: ease; /* 動態方式漸慢開始與結束 */
+	-webkit-animation-delay: 6s; /* 秒後播放 */
+	-webkit-animation-direction: normal; /* 動畫播放順序為順向 */
+	-webkit-animation-fill-mode: forwards; /* 動畫結束後停格於最後一格，需搭配direction */
+}
+
+@keyframes ant2{
+	/* 第一格設定 */
+from { 
+
+}
+to {
+	left:24%;
+    bottom: 27%;
+	opacity: 1;
+}
+}
+
+.step .pointer3{
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: relative;
+    bottom: 110px;
+    left: 140px;
+
+    opacity:0;
+
+	animation-name: ant3;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+	animation-delay: 1s;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	
+	-webkit-animation-name: ant3; /* 動畫名稱 */
+	-webkit-animation-duration: 1.5s; /* 動畫時間 */
+	-webkit-animation-iteration-count: 1; /* 播放次數1次 */
+	-webkit-animation-timing-function: ease; /* 動態方式漸慢開始與結束 */
+	-webkit-animation-delay: 7.5s; /* 秒後播放 */
+	-webkit-animation-direction: normal; /* 動畫播放順序為順向 */
+	-webkit-animation-fill-mode: forwards; /* 動畫結束後停格於最後一格，需搭配direction */
+}
+
+@keyframes ant3{
+	/* 第一格設定 */
+from { bottom:60%;
+
+}
+to {
+	left:61%;
+    bottom: 6%;
+	opacity: 1;
+}
+}
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    line-height: 60px;
+    background-color:rgba(0,206,200,1);
+    color: #fff;
+    text-align: center;
+}
+
+
+/*===============rwd details===============*/
+
+/* For tablets */
+@media only screen and (min-width: 768px) { 
+
+    /* nav */
+    nav{
+        box-sizing: border-box;
+        display: inline-block;
+        width:50%;
+        height:70px;
+        margin: auto;
+        padding: 30px;
+        text-align: right;
+    
+        z-index: 10000;
+        float: right;
+    
+    }
+    
+    
+    nav ul li{
+        display: inline-block;
+        width: 90px;
+        height: 30px;
+        padding: 0px 5px;
+        text-align: center;
+        line-height:35px;
+    }
+    
+    
+    nav ul li:hover{
+        cursor: pointer;
+        border-top: 3px solid rgba(0, 206, 200,.6);
+        font-weight: bold;
+    }
+    
+    nav li a{
+        text-decoration: none;
+        color:rgba(67,106,230);
+        font-size: 17px;
+        letter-spacing:1px;
+    }
+        .h_box img{
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            padding: 5px;
+        }
+    
+        .ficon{
+               font-size:60px;
+           }
+           
+           nav{
+               position: -webkit-sticky;
+               position: sticky;
+               top: 0;
+               z-index:2000;
+           }
+           
+           nav li{
+               display: inline-block;
+               border-bottom:solid rgba(242, 242, 242, 1) 0px;
+           }
+           
+           .menu{
+               display:none;
+           }
+    
+        /* content */
+
+    .content h1{
+        text-align: center;
+        color:#fff;
+        line-height: 80px;
+        letter-spacing:1px;
+        font-size: 38px;
+    }
+
+    .wrap{
+        width:100%;
+        height:450px;
+        margin:0px 0px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    section:nth-child(2n){
+        background:rgba(0,206,200,1);	
+        color:rgb(247, 246, 246);
+    }
+    
+    section:nth-child(3n){
+        background:rgba(255,235,174,1);
+    }
+    
+    
+    
+    section .picbox,.textbox{
+        float: left;
+        box-sizing: border-box;
+        position:relative;
+    }
+    
+    .picbox{
+        width:auto;
+        height:90%;
+        box-sizing: border-box;
+        margin: 20px 50px;
+    }
+
+    .textbox{
+        width: 500px;
+        margin: 40px 30px;
+        padding: 20px 60px;
+        box-sizing: border-box;
+        line-height: 1.8em;
+        font-weight: bold;
+        }
+        
+        .textbox h1{
+            font-size: 28px;
+            margin: 10px 0px;
+        }
+
+        /* br{
+            display:none;
+        } */
+        
+        
+
+/* 使用流程 */
+
+
+    .wrap_1{
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row;
+        width: 960px;
+        margin: auto;
+        padding: 10px;
+        text-align: center; 
+        background-color: #fff;
+        border-radius:10px ;
+    }
+    
+    .wrap_2{
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row;
+        width: 960px;
+        margin: auto;
+        margin-bottom: 0px;
+        padding: 10px;
+        text-align: center; 
+        background-color: #fff;
+        border-radius:10px ;
+        
+    }
+
+}
+
+/* For desktop */
+@media only screen and (min-width: 1200px) {
+
+   
+}
